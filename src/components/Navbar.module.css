@@ -1,0 +1,81 @@
+.nav {
+  font-family: "JetBrains Mono", "Poppins", sans-serif;
+  font-size: large;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: rgb(26 27 30);
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  font-size: large;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 1em 1em;
+}
+
+li a {
+  text-decoration: none;
+  /* color: white; */
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navlink:hover {
+  color: rgba(187, 225, 250, 0.5);
+  text-decoration: underline;
+}
+
+.active {
+  color: rgba(187, 225, 250, 0.5);
+  text-decoration: underline !important;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  /* Styles for mobile devices */
+
+  ul {
+    display: flex;
+    padding-left: 0;
+    gap: 0px;
+    justify-content: center;
+    font-size: medium;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Styles for tablet devices */
+
+  .nav {
+    font-family: "JetBrains Mono", "Poppins", sans-serif;
+    font-size: x-large;
+  }
+}
+
+/* Laptop styles */
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Styles for laptop devices */
+  .nav {
+    font-family: "JetBrains Mono", "Poppins", sans-serif;
+    font-size: x-large;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1201px) {
+  /* Styles for desktop devices */
+  .nav {
+    font-family: "JetBrains Mono", "Poppins", sans-serif;
+    font-size: larger;
+  }
+}

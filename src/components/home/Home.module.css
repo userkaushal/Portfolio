@@ -1,0 +1,233 @@
+@keyframes fadeInUp {
+    0% { opacity: 0;
+        transform: translateY(20px);
+    }
+    100% { opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+
+    min-height: 70vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.5em;
+    margin: 2.5rem auto;
+    color: white;
+    background-color: rgb(200 200 200 / 58%);
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.box {
+    text-align: left;
+    /* width: 45%; */
+}
+
+.box h1 {
+    /* padding-top: 2rem; */
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+.box h3 {
+    /* padding-top: 2rem; */
+    font-size: 2rem;
+}
+
+.box p {
+    /* color: #ffff10a8; */
+    color: teal;
+}
+
+.btnflex {
+    display: flex;
+    gap: 100px;
+}
+
+.btnflex button {
+    height: auto;
+    width: 50%;
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(26 27 30);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "JetBrains Mono" ,"Poppins", sans-serif;
+    border: none;
+
+    &:hover{
+        box-shadow:0 0 8px 4px rgba(187, 225, 250, 0.5);
+        transform: translateY(-2px);
+
+    }
+}
+/* .right {} */
+
+/* .right img {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.2);
+        transition: filter 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+    }
+} */
+
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    /* Styles for mobile devices */
+
+    .container {
+
+        min-height: 80vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid yellow; */
+        border-radius: 4.5em;
+        margin: 2rem auto;
+        padding-bottom: 2%;
+        color: white;
+        background-color: rgb(200 200 200 / 58%);
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: left;
+        width: 90%;
+        margin-bottom: 2em;
+        
+    }
+
+    .box h1 {
+        /* padding-top: 2rem; */
+        font-size: 3.3rem;
+    }
+
+    .box h3 {
+        /* padding-top: 2rem; */
+        font-size: 1.8rem;
+    }
+
+    .btnflex {
+        margin-bottom: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .btnflex button{
+        width: 90%;
+        
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Styles for tablet devices */
+
+    .container {
+
+        min-height: 80vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid yellow; */
+        border-radius: 4.5em;
+        margin: 2.5rem auto;
+        color: white;
+        background-color: rgb(200 200 200 / 58%);
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .box {
+        text-align: left;
+        width: 90%;
+    }
+
+    .box h1 {
+        /* padding-top: 2rem; */
+        font-size: 3.8rem;
+    }
+
+    .box h3 {
+        /* padding-top: 2rem; */
+        font-size: 2rem;
+    }
+    .btnflex button{
+        font-size: 1rem;   
+    }
+}
+
+/* Laptop styles */
+@media (min-width: 901px) and (max-width: 1200px) {
+    /* Styles for laptop devices */
+    .container {
+
+        min-height: 80vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid yellow; */
+        border-radius: 4.5em;
+        margin: 2.5rem auto;
+        color: white;
+        background-color: rgb(200 200 200 / 58%);
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .box {
+        text-align: left;
+        width: 90%;
+    }
+
+    .box h1 {
+        /* padding-top: 2rem; */
+        font-size: 3.8rem;
+    }
+
+    .box h3 {
+        /* padding-top: 2rem; */
+        font-size: 2rem;
+    }
+    .btnflex button{
+        font-size: 1.2rem;   
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1201px) {
+    /* Styles for desktop devices */
+}

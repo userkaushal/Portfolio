@@ -1,0 +1,62 @@
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.projects{
+    margin-bottom: 2em;
+}
+
+.projects h1{
+    width: 85vw;
+    text-align: left;
+    color: white;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.container {
+    width: 85vw;
+    margin: auto;
+    margin-top: 1em;
+    background-color: rgba(200, 200, 200, 0.461);
+    padding: 1.7em;
+    border-radius: 1em;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+.container h2{
+    margin: 0;
+    color:rgb(26 27 30);
+    font-size: 1.5em;
+}
+
+.container p{
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+}
+
+.links{
+    text-align: right;
+    
+}
+
+.links a{
+    margin-right: 1em;
+}
+.links img{
+    &:hover{
+        transform: translateY(-2px);
+    }
+}
+
+
